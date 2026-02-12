@@ -4,3 +4,6 @@ def greet(name):
 if __name__=="__main__":
     print(greet("World"))
     print("My first project is running!")
+    print("Ethan Kim")
+    print('*' * 10)
+
