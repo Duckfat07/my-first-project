@@ -106,6 +106,46 @@ print(5 > 2) # false, because 2 is not greater than 5
 print(3 == 3) # true, because 3 is equal to 3
 print(3 != 4) # True, because 3 is not equal to 4
 print(5 >= 4) # True, because 5 is greater than or equal to 4
+print(3 != 2) # true because 3 is not equal to 2
+print(len('fruit') == len('mango')) # True, because mango and fruit have the same number of characters
+print(len('dog') != len('gazelle')) # True, because dog has 3 characters and gazelle has 7 characters
+print(len('souffle') > len('pastry')) # True, because souffle has 7 characters and pastry has 6 characters
+print(len('soccer') < len('basketball')) # True, because basketball has more characters
+print(len('water') >= len('seltzer')) # False, because seltzer has more characters than water
+print(len('father') <= len('son')) # False, because father has more characters than son
 
+variable1 = "computer"
+variable2 = "phone"
 
+print(len(variable1) != len(variable2)) # True, because computer has more characters than phone
 
+# Boolean comparison
+print('True == True:', True == True) 
+print('True == False:', True == False) # False, because True is not equal to False
+print('False == False:', False == False) # True, because false is equal to false
+print('True and True:', True and True) # True, because both conditions are true
+print('True or False:', True or False) # True because at least one condition is true
+print('False and False:', False and False) # False, because both conditions are false
+
+# BOOLEAN COMPARISON & LOGICAL OPERATORS
+# 
+# Operands: The values on either side of an operator (in this case, True or False)
+# 
+# == (equality operator): Checks if two values are equal
+#    Example: True == True returns True, True == False returns False
+#
+# and (logical AND): Returns True only if BOTH operands are True
+#    Example: True and True returns True, True and False returns False
+#
+# or (logical OR): Returns True if AT LEAST ONE operand is True
+#    Example: True or False returns True, False or False returns False
+
+# Boolean comparison
+print('True == True:', True == True) 
+print('True == False:', True == False) # False, because True is not equal to False
+print('False == False:', False == False) # True, because false is equal to false
+print('True and True:', True and True) # True, because both conditions are true
+print('True or False:', True or False) # True because at least one condition is true
+print('False and False:', False and False) # False, because both conditions are false
+
+# Another way comparison
