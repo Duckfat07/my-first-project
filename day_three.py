@@ -149,3 +149,13 @@ print('True or False:', True or False) # True because at least one condition is 
 print('False and False:', False and False) # False, because both conditions are false
 
 # Another way comparison
+# True - because the data values are the same
+print('5 is 5:', 5 is 5)
+print('5 is not 6:', 5 is not 6) # True, because 5 is not 6
+print('7 is 8:', 7 is 8) # False, because 7 is not 8
+print('3 is 3.0:', 3 is 3.0) # False, because 3 is an integer and 3.0 is a floating point number
+print('J in John:', 'J' in 'John') # True because J is found in the string
+print('j in John:', 'j' in 'John') # False, because there is no lowercase j in John
+print('O in John:', 'O' in 'John') # False, because there is no uppercase O in John
+
+print('coding' in 'coding for all') # True because coding for all has the word coding
