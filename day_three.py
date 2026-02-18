@@ -159,3 +159,19 @@ print('j in John:', 'j' in 'John') # False, because there is no lowercase j in J
 print('O in John:', 'O' in 'John') # False, because there is no uppercase O in John
 
 print('coding' in 'coding for all') # True because coding for all has the word coding
+print('a in an:', 'a' in 'an') # True 
+print('4 is 2**2:', 4 is 2**2) # True, because 2 to the power of 2 is 4
+print('apple is in snapple:', 'apple' in 'snapple') # True, because snapple has the word apple in it
+
+print(5 > 2 and 4 > 5) # False, because 4 is not greater than 5
+print(4 > 2 and 3 > 2) # True because both statements are true
+print(7 > 3 or 6 > 8) # True, because one of the statements is true
+print(4 < 2 or 8 < 3) # False because both statements are false
+print(not 3 > 2) # False, becuase 3 > 2 is true, then not True gives False
+print(not 4 > 5) # True, because 4 > 5 is false 
+print(not(4 > 3 and 10 < 12)) # False, because 4 > 3 and 10 < 12 is true, then not True gives False
+print(not(5 > 3 or 3 > 10)) # False because 5 > 3 is true, then not true gives false
+print(not True) # False
+print(not False) # True
+print(not not True) # True, because not True is False, then not False gives true
+print(not not not not not False) # False, because not False is True, then not True gives False, then not False gives True, then not True gives False
