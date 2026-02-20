@@ -52,11 +52,11 @@ print(e) # o
 print(f) # n
 
 word = 'pie'
-1, 2, 3 = word
-print(1) # p
-print(2) # i 
-print(3) # e
-print(1+2+3) # pie
+a, b, c = word
+print(a) # p
+print(b) # i 
+print(c) # e
+print(a+b+c) # pie
 print(word[0]) # p
 print(word[1]) # i
 print(word[2]) # e
@@ -189,4 +189,67 @@ challenge = '_thirty_days_of_python'
 print(challenge.isidentifier()) # True, because it starts with an underscore and contains only letters
 
 # islower(): checks if all alphabets in a string are lowercase
+challenge = 'thirty days of python'
+print(challenge.islower()) # True, all characters in the string are lowercase 
+challenge = 'thirty_days_of_python'
+print(challenge.islower()) # True, all characters in the string are lowercase, underscores are not letters so they don't affect the result)
+challenge = 'Thirty'
+print(challenge.islower()) # False, because 'T' is uppercase
 
+# isupper(): checks if all the letters in the string are uppercase
+challenge = 'thirty days of python'
+print(challenge.isupper()) # False, all letters in the string are lowercase
+challenge = 'THIRTY DAYS OF PYTHON'
+print(challenge.isupper()) # True, all letters in the string are uppercase
+
+# isnumeric(): checks numeric characters (0-9), this method checks if all characters in the string are numeric characters, which are base numbers 0-9. It does not take into account negatives, decimal points, or other characters that may be used in numeric representations. 
+num = '1033'
+print(num.isnumeric()) # True, all characters in the string are numeric
+num = '10.33'
+print(num.isnumeric()) # False, there is a dot character in the string
+print('ten'.isnumeric()) # False
+print('10000'.isnumeric()) # True
+
+# join(): returns a concatentated string, it takes all items in an iterable and joins them into one string. A string must be specified as the separator. 
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = '#,'.join(web_tech)
+print(result) # HTML#,CSS#,JavaScript#,React, joins all items in the list
+sports = ['soccer', 'basketball', 'hockey', 'football']
+result = ' '.join(sports) # This ' ' is the connector, the string that will go between each item (e.g., a space, a comma, or nothing at all)
+print(result) # soccer basketball hockey football, joins all items in the list with a space 
+
+# strip(): removes both leading and trailing characters (space is the default leading character to remove)
+challenge = ' thirty days of python '
+print(challenge.strip()) # 'thirty days of python', removes leading and trailing spaces
+challenge = 'yyythirty days of pythonyyy'
+print(challenge.strip('y')) # 'thirty days of python', removes leading and trailing 'y' characters
+
+# replace(): replaces substring inside, replace(thing being replaced, thing replacing it)
+challenge = 'thirty days of python'
+print(challenge.replace('python', 'C++')) # thirty days of C++
+
+# split(): splits the string, it returns a list of substrings separated by the specified separator (space is the default separator)
+challenge = 'thirty days of python'
+print(challenge.split()) # ['thirty', 'days', 'of', 'python'], splits the string into a list of substrings using space as the separator
+challenge = 'thirty days of python'
+print(challenge.split('y')) # ['thirt', ' da', 's of python'], splits the string into a list of substrings using 'y' as the separator
+
+# title(): returns a title cased string
+challenge = 'thirty days of python'
+print(challenge.title()) # Thirty Days Of Python
+sentence = 'the french revolution'
+print(sentence.title()) # The French Revolution
+phrase = 'the catcher in the rye'
+print(phrase.title()) # The Catcher In The Rye
+
+# swapcase(): checks if string starts with the specified string
+challenge= 'thirty days of python'
+print(challenge.swapcase()) # THIRTY DAYS OF PYTHON, converts all lowercase letters
+challenge = 'Thirty Days Of Python'
+print(challenge.swapcase()) # tHIRTY dAYS oF pYTHON, 
+
+# startswith(): Checks if string starts with the specified string
+challenge = 'thirty days of python'
+print(challenge.startswith('thirty')) # True
+challenge = '30 days of python'
+print(challenge.startswith('thirty')) # False
