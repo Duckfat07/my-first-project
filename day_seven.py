@@ -151,6 +151,13 @@ print('Are the lengths of the set and the list of ages equal?',len(age_set) == l
 # set = {1,2,3}
 
 string = "I am a teacher and I love to inspire and teach people"
+# split() method - built-in function that breaks a string into a list of substrings based on a specified operator
+# the separator = the delimiter to use for splitting the string (default is space)
+# maxsplit = the max number of splits to perform (default is -1, which means there is no limit)
+x =string.split(' ', -1)
+print(x)
+y = set(x) 
+print(len(y)) 
 
 
 
