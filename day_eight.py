@@ -144,3 +144,46 @@ dog = {
 }
 print(len(dog))
 
+student = {
+    'first_name':'Sammy',
+    'last_name':'LeBoeuf',
+    'gender':'male',
+    'age': 17,
+    'marital_status':False,
+    'skills':['math', 'english', 'science', 'coding'],
+    'country':'France',
+    'city':'Marseille',
+    'address':{
+        'street':'220 Croissant Avenue',
+        'zipcode':6767
+    }
+}
+print(student)
+# check the length of the student dictionary
+print(len(student))
+# get the value of skills and check the data type (it should be a list)
+skills_list = student['skills']
+print(type(skills_list))
+student['city']='Toulouse'
+skills_list.extend(['sports', 'physics'])
+
+# check keys in dictionary
+print('marital_status' in student) # True
+
+# get the dictionary values as a list
+student_list = student.values()
+print(student_list)
+
+# change the dictionary to a list of tuples using items() method
+print(student.items()) 
+
+# get the keys as a list
+student_keys_list = list(student.keys())
+print(student_keys_list)
+print(list(student))
+
+# delete one of the items in a dictionary
+del student['gender']
+print(student)
+# delete one of the dictionaries
+del student
