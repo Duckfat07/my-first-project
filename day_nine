@@ -1,4 +1,10 @@
 # conditional statements
+# equals: a == b
+# not equals: a != b
+# less than: a < b
+# greater than: a > b
+# less than or equal to: a <= b
+# greater than or equal to: a >= b
 
 # syntax for if statement
 # if condition:
@@ -85,4 +91,33 @@ if user == 'admin' or password == 3065:
 else: 
     print('Access denied!')
 
+string = ('I love hamburgers')
+if 'hamburgers' in string:
+    print('TRUE')
+else: 
+    print('false')
 
+# logical operators
+# and - if both conditions are true, returns true
+# or - if one condition is true, returns true
+# not - reverses the result, returns False if the result is true
+
+# testing if a is NOT greater than b 
+a = 5
+b = 8
+if not a > b:
+    print('a is greater than b')
+else: 
+    print('a is not greater than b')
+
+temp = 60 
+is_raining = True
+if temp > 60 and not is_raining: 
+    print('great day to be outside')
+
+# Exercise 1
+age = input('Enter your age:')
+if age >= 18:
+    print('You are old enough to drive')
+else:
+    print('You need', 18-age, 'more years to learn to drive')
