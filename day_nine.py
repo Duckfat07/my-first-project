@@ -175,3 +175,54 @@ elif month in summer:
     print('the season is currently summer')
 else: 
     print('invalid input')
+
+# exercise 4
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit_input = input('Enter a fruit:')
+if fruit_input in fruits:
+    print('That fruit already exists in the list')
+elif fruit_input not in fruits:
+    fruits.append(fruit_input) # adds the inputted fruit to the list
+    print(fruits)
+
+# exercise 4
+person={
+    'first_name': 'Asabeneh',
+    'last_name': 'Yetayeh',
+    'age': 250,
+    'country': 'Finland',
+    'is_married': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'Space street',
+        'zipcode': '02210'
+    }
+    }
+# print middle skill 
+if 'skills' in person:
+    skills = person['skills']
+    middle_item = skills[2]
+    print('Middle skill:', middle_item)
+
+# check if python is in skills
+if 'skills' in person:
+    if 'Python' in person['skills']:
+        print('This person can code in Python')
+    else:
+        print('This person cannot code in Python')
+
+# determine developer title
+if 'skills' in person:
+    skills = person['skills']
+    if 'Javascript' in skills and 'React' in skills and 'Node' not in skills and 'Python' not in skills and 'MongoDB' not in skills:
+        print('He is a frontend developer')
+    elif 'Node' in skills and 'MongoDB' in skills and 'Python' not in skills and 'Javascript' not in skills and 'React' not in skills:
+        print('He is a backend developer')
+    elif 'Node' in skills and 'Node' in skills and 'MongoDB' in skills and 'Javascript' not in skills and 'React' not in skills:
+        print('He is a fullstack developer')
+    else: 
+        print('unknown title')
+
+# f" allows you to put a variable in a string in curly brackets
+if person['is married'] == True and person['country'] == 'Finland':
+    print(f"{person['first_name']} {person['last_name']} lives in Finland. ")
