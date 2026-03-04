@@ -139,3 +139,39 @@ elif num1 == num2:
     print(num1, 'is equal to', num2)
 else:
     print('Not a number!!')
+
+# exercise 2
+import random
+grade_possibilities = [90, 95, 83, 87, 72, 99, 86, 33, 66, 55, 40, 80, 91, 82]
+grade = random.choice(grade_possibilities)
+print('here is the grade the student got on the test:', grade)
+if grade <= 100 and grade >= 90:
+    print('this grade merits an A')
+elif grade <= 89 and grade >= 80: 
+    print('this grade merits a B')
+elif grade <= 79 and grade >= 70: 
+    print('this grade merits a C')
+elif grade <= 69 and grade >= 60: 
+    print('this grade merits a D')
+else:
+    print('this grade merits an F')
+
+# Exercise 3
+month_input = input('Enter the month:')
+# .title() method makes all letters uppercase
+# .capitalize() method makes the first letter of the word uppercase, leaves the rest lowercase
+month = month_input.capitalize()
+autumn = ['September', 'October', 'November']
+winter = ['December', 'January', 'February']
+spring = ['March', 'April', 'May']
+summer = ['June', 'July', 'August']
+if month in autumn:
+    print('the season is currently autumn')
+elif month in winter:
+    print('the season is currently winter')
+elif month in spring:
+    print('the season is currently spring')
+elif month in summer:
+    print('the season is currently summer')
+else: 
+    print('invalid input')
