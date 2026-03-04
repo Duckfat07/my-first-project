@@ -111,13 +111,31 @@ else:
     print('a is not greater than b')
 
 temp = 60 
-is_raining = True
-if temp > 60 and not is_raining: 
+is_raining = False
+if temp >= 60 and not is_raining: 
     print('great day to be outside')
 
 # Exercise 1
-age = input('Enter your age:')
+age = int(input('Enter your age:'))
 if age >= 18:
     print('You are old enough to drive')
 else:
-    print('You need', 18-age, 'more years to learn to drive')
+    print('You need', 18 - age, 'more years to learn to drive')
+
+my_age = 34
+your_age = int(input('Enter your age:'))
+if your_age >= my_age:
+    print('You are', your_age - 34, 'years older than me')
+else:
+    print('I am', 34 - your_age, 'years older than you')
+
+num1 = int(input('Enter number one:'))
+num2 = int(input('Enter number two:'))
+if num1 > num2:
+    print(num1, 'is greater than', num2)
+elif num2 > num1:
+    print(num2, 'is greater than', num1)
+elif num1 == num2:
+    print(num1, 'is equal to', num2)
+else:
+    print('Not a number!!')
