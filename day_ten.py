@@ -53,7 +53,7 @@ while number < 5:
 # the above while loop only prints 0, 1, 2, and 4 (skips 3)
 
 # for loops 
-# syntax
+# syntax - using For loop on list
 # for iterator in lst:
 #   code goes here
 
@@ -98,3 +98,24 @@ for key in soccer_player:
 for key, value in soccer_player.items():
     print(key, value) # this way we get both keys and values printed out
 # example output: first_name Michael
+
+# Using For loop in set
+# for iterator in st:
+#   code goes here
+# Example
+infotech_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+for company in infotech_companies:
+    print(company)
+
+# break and continue part 2 
+# we use break when we want to stop our loop before it is completed
+# for iterator in sequence:
+#   code goes here
+#   if condition:
+#       break
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+# the loop stops when it reaches 3
